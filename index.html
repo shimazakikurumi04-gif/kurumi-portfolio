@@ -1,43 +1,214 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>Kurumi Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>島﨑くるみのポートフォリオ</title>
+
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f6f9;
-        margin: 40px;
-    }
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #f4f6fa;
+    color: #333;
+}
 
-    h1 {
-        color: #2c3e50;
-    }
+header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
 
-    h2 {
-        color: #34495e;
-        margin-top: 30px;
-    }
+header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
 
-    p {
-        line-height: 1.6;
-    }
+header p {
+    font-size: 20px;
+    opacity: 0.95;
+}
+
+section {
+    padding: 70px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 30px;
+    border-left: 6px solid #667eea;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+.big-strong {
+    font-size: 34px;
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.profile img {
+    width: 260px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.profile p {
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.skill {
+    background: #667eea;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.passion {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    line-height: 2;
+    font-size: 17px;
+}
+
+.works {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.work-card {
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.work-card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #222;
+    color: white;
+    font-size: 14px;
+}
 </style>
 </head>
+
 <body>
-    <h1>島﨑くるみ</h1>
-    <p>日本女子大学 文学部 英文学科</p>
 
-    <h2>自己紹介</h2>
-    <p>
-        私は課題を構造的に整理し、改善策を考えることを得意としています。
-        個別指導塾では提出率向上のための企画を立案・実行しました。
-    </p>
+<header>
+<h1>島﨑くるみのポートフォリオ</h1>
+<p>日本女子大学 文学部英文学科</p>
+</header>
 
-    <h2>現在学習中</h2>
-    <ul>
-        <li>HTML / CSS</li>
-        <li>ITパスポート</li>
-    </ul>
+<section>
+<h2>自己紹介</h2>
+
+<div class="profile">
+<img src="profile.jpg" alt="プロフィール写真">
+
+<div>
+<div class="big-strong">
+強み：課題を構造的に整理し、改善を重ねる継続力
+</div>
+
+<p>
+個別指導塾での指導経験では、生徒の課題提出率が低いという状況に対し、
+原因を「やる気の問題」とせず、「達成設計の不足」という構造的課題として再定義しました。
+進捗を可視化し、小さな成功体験を積み重ねる仕組みを設計し、実行。
+その結果、生徒の提出率と学習習慣の向上を実現しました。
+</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>現在学習中</h2>
+
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">Python</div>
+<div class="skill">Java</div>
+<div class="skill">ITパスポート</div>
+</div>
+</section>
+
+<section>
+<h2>文系からシステムエンジニアへ</h2>
+
+<div class="passion">
+<p>
+私は文系出身として、言葉と構造を扱う力を強みとしてきました。
+自分の考えや他者の考えを丁寧に言語化し、それを論理的に整理していく作業は、
+外国語学習と非常に似ていると感じています。
+</p>
+
+<p>
+英語を学ぶ際、文法や構造を理解し、意味を分解し、再構築していくように、
+システム開発においても要件を分解し、設計へと翻訳し、コードとして実装していく。
+この「翻訳」のプロセスに強い魅力を感じ、システムエンジニアを志望しています。
+</p>
+
+<p>
+文系だからこそ、人の意図や曖昧なニュアンスを汲み取り、
+それを構造化し、論理的に整理する力があります。
+ユーザー視点を大切にしながら、課題解決に貢献できるエンジニアを目指します。
+</p>
+</div>
+</section>
+
+<section>
+<h2>作品紹介</h2>
+
+<div class="works">
+
+<div class="work-card">
+<h3>学習管理アプリ</h3>
+<p>Pythonを用いて制作途中。継続を支える設計思想を反映させます。</p>
+</div>
+
+<div class="work-card">
+<h3>デザインWebページ</h3>
+<p>HTML・CSSを用いた自己紹介サイト</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Kurumi Shimazaki
+</footer>
+
 </body>
 </html>
+
