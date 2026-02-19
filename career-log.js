@@ -17,24 +17,14 @@ function addCompany() {
   displayCompanies();
 }
 
-function deleteCompany(index) {
-  companies.splice(index, 1);
-  localStorage.setItem("companies", JSON.stringify(companies));
-  displayCompanies();
-}
-
 function displayCompanies() {
   const list = document.getElementById("companyList");
   list.innerHTML = "";
 
-  companies.forEach((company, index) => {
+  companies.forEach((company) => {
     const li = document.createElement("li");
-
-    li.innerHTML = `
-      <span>${company}</span>
-      <button class="delete-btn" onclick="deleteCompany(${index})">削除</button>
-    `;
-
+    li.textContent = company;
     list.appendChild(li);
   });
 }
+
