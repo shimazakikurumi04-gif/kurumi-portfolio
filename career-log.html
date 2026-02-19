@@ -40,8 +40,13 @@
       border-radius: 8px;
       border: 1px solid #ccc;
       width: 65%;
+      
+    } select {
+      padding: 6px;
+      border-radius: 6px;
+      margin-bottom: 10px;
     }
-
+    
     button {
       padding: 8px 14px;
       background-color: #6F8F72;
@@ -75,9 +80,39 @@
     <div class="card">
       <h2>企業を追加</h2>
       <input type="text" id="companyName" placeholder="企業名を入力">
+      <br>
+      志望度：
+      <select id="motivation">
+        <option value="1">★1</option>
+        <option value="2">★2</option>
+        <option value="3">★3</option>
+        <option value="4">★4</option>
+        <option value="5">★5</option>
+      </select>
+
+      <br>
+      不安度：
+      <select id="anxiety">
+        <option value="1">★1</option>
+        <option value="2">★2</option>
+        <option value="3">★3</option>
+        <option value="4">★4</option>
+        <option value="5">★5</option>
+      </select>
+      <br>
+      わくわく度：
+      <select id="excitement">
+        <option value="1">★1</option>
+        <option value="2">★2</option>
+        <option value="3">★3</option>
+        <option value="4">★4</option>
+        <option value="5">★5</option>
+      </select>
+      
+      <br><br>
       <button onclick="addCompany()">保存</button>
     </div>
-
+ 
     <div class="card">
       <h2>登録企業一覧</h2>
       <ul id="companyList"></ul>
